@@ -48,16 +48,14 @@ Federated learning is a machine learning setting where multiple clients (e.g., m
 2. Run the server script to start the Flower server.
     ```sh
     python server.py
-
-    The server will start and listen for client connections on localhost:8080.
+The server will start and listen for client connections on localhost:8080.
 
 ### Start the Clients
 1. Open a new terminal and navigate to the project directory.
 2. Run the client script to start multiple clients in separate threads.
     ```sh
     python client.py
-
-    This script will start multiple clients, each connecting to the server at localhost:8080. Wait for all clients to finish their training rounds.
+This script will start multiple clients, each connecting to the server at localhost:8080. Wait for all clients to finish their training rounds.
 
 ### Evaluate the Results
 1. After the federated learning process is complete, you can evaluate the logged results.
@@ -65,8 +63,7 @@ Federated learning is a machine learning setting where multiple clients (e.g., m
 3. Run the evaluation script.
     ```sh
     python eval.py
-
-    This script will read the logged results from the clients and calculate the average metrics.
+This script will read the logged results from the clients and calculate the average metrics.
 
 ### Visualize the Results
 1. After evaluating the results, you can visualize them using the Streamlit app.
@@ -74,8 +71,7 @@ Federated learning is a machine learning setting where multiple clients (e.g., m
 3. Run the Streamlit app.
     ```sh
     streamlit run stlit.py
-
-    This will start a local web server, and you can view the results in your web browser by navigating to the provided URL (usually http://localhost:8501).
+This will start a local web server, and you can view the results in your web browser by navigating to the provided URL (usually http://localhost:8501).
 
 ## Project Structure
 
